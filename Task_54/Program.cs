@@ -1,5 +1,4 @@
-﻿Console.Clear();
-
+﻿// Вспомогательный метод вывода
 static void PrintArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -12,6 +11,7 @@ static void PrintArray(int[,] array)
     }
 }
 
+Console.Clear();
 // Создание массива
 int[,] array = new int[,]
 {
@@ -20,7 +20,7 @@ int[,] array = new int[,]
     { 8, 4, 2, 4 }
 };
 
-// Вывод исходного массива
+// Исходный массив
 Console.WriteLine("Исходный массив:");
 PrintArray(array);
 
@@ -41,5 +41,6 @@ for (int i = 0; i < array.GetLength(0); i++)
     }
 }
 
+//Вывод
 Console.WriteLine("Упорядоченный массив:");
 PrintArray(array);

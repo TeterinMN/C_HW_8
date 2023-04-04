@@ -1,6 +1,4 @@
-﻿Console.Clear();
-
-// Вспомогательный метод для вывода матрицы в консоль
+﻿// Вспомогательный метод для вывода матрицы в консоль
 static void PrintMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
@@ -12,12 +10,12 @@ static void PrintMatrix(int[,] matrix)
         Console.WriteLine();
     }
 }
-
+Console.Clear();
 // Создание двух матриц
 int[,] matrix1 = new int[,] { { 2, 4 }, { 3, 4 } };
 int[,] matrix2 = new int[,] { { 3, 2 }, { 3, 3 } };
 
-// Вывод исходных матриц
+// Исходные матрицы
 Console.WriteLine("Исходные матрицы:");
 PrintMatrix(matrix1);
 Console.WriteLine();
@@ -39,6 +37,6 @@ for (int i = 0; i < matrix1.GetLength(0); i++)
     }
 }
 
-// Вывод произведения матриц
+// Вывод
 Console.WriteLine("Произведение матриц:");
 PrintMatrix(resultMatrix);

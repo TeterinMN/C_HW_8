@@ -1,6 +1,4 @@
-﻿Console.Clear();
-
-// Метод для вывода массива в консоль
+﻿// Метод для вывода массива в консоль
 static void PrintArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -13,6 +11,7 @@ static void PrintArray(int[,] array)
     }
 }
 
+Console.Clear();
 // Создание двумерного массива
 int[,] array = new int[,]
 {
@@ -22,7 +21,7 @@ int[,] array = new int[,]
     { 5, 2, 6, 7 }
 };
 
-// Вывод исходного массива
+// Исходный массив
 Console.WriteLine("Исходный массив:");
 PrintArray(array);
 
@@ -43,4 +42,5 @@ for (int i = 0; i < array.GetLength(0); i++)
     }
 }
 
+// Вывод
 Console.WriteLine("Строка с наименьшей суммой элементов: " + (minRowIndex + 1));
